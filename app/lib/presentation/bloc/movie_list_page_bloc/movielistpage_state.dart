@@ -15,11 +15,11 @@ class MovieListPageLoadingState extends MovieListPageState {
 }
 
 class MovieListPageLoadedState extends MovieListPageState {
-  final List<Movie> moviesList;
-  const MovieListPageLoadedState({ required this.moviesList });
+  final List<Movie> movieList;
+  const MovieListPageLoadedState({ required this.movieList });
 
   @override
-  List<Object> get props => [moviesList];
+  List<Object> get props => [movieList];
 }
 
 class MovieListPageNoInternetState extends MovieListPageState {

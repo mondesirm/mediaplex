@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'dart:async';
 
-// import 'package:flutter/foundation.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -12,20 +11,21 @@ part 'serieslistpage_event.dart';
 part 'serieslistpage_state.dart';
 
 class SeriesListPageBloc extends Bloc<SeriesListPageEvent, SeriesListPageState> {
-  SeriesListPageBloc() : super(const SeriesListPageLoadingState());
+  SeriesListPageBloc() : super(const SeriesListPageLoadingState()) {
+     on<GetSeriesListBaseOnCategory>(_onStarted);
+  }
 
-  Stream<SeriesListPageState> mapEventToState(SeriesListPageEvent event) async* {
-    yield const SeriesListPageLoadingState();
+  Future<void> _onStarted(GetSeriesListBaseOnCategory event, Emitter<SeriesListPageState> emit) async {
+    emit(const SeriesListPageLoadingState());
 
-    if (event is GetSeriesListBaseOnCategory) {
-      try {
-        final List<Series> seriesList = await NetworkRepo().getSeriesCategoryList(event.categoryUrl);
-        yield SeriesListPageLoadedState(seriesList: seriesList);
-      } on IOException {
-        yield const SeriesListPageNoInternetState();
-      } catch (e) {
-        yield const SeriesListPageErrorState();
-      }
+    try {
+      final List<Series> seriesList = await NetworkRepo().getSeriesCategoryList(event.categoryUrl);
+      emit(SeriesListPageLoadedState(seriesList: seriesList));
+    } on IOException {
+      emit(const SeriesListPageNoInternetState());
+    } catch (e) {
+      // print(e.toString());
+      emit(const SeriesListPageErrorState());
     }
   }
 }

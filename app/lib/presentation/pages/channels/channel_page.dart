@@ -14,7 +14,7 @@ class ChannelPage extends StatefulWidget {
 }
 
 class _ChannelPageState extends State<ChannelPage> {
-  static const titleGeneralError = 'Error occure';
+  static const titleGeneralError = 'An Error Occurred';
   static const titleNetworkError = 'No Internet Connection';
 
   late ChannelPageBloc _channelPageBloc;

@@ -18,22 +18,22 @@ class MyApp extends StatelessWidget {
       // home: const MyHomePage(title: 'mediaplex'),
       theme: ThemeData(
         fontFamily: 'Mukta',
-          hintColor: whiteColor,
-          scaffoldBackgroundColor: backgroundColor,
-          iconTheme: const IconThemeData(color: whiteColor),
-          appBarTheme: const AppBarTheme(backgroundColor: darkGreyColor),
-          bottomNavigationBarTheme: const BottomNavigationBarThemeData(backgroundColor: darkGreyColor),
-          elevatedButtonTheme: ElevatedButtonThemeData(style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.redAccent))),
-          colorScheme: ColorScheme.fromSwatch().copyWith(secondary: whiteColor),
-          // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          // useMaterial3: true
+        hintColor: whiteColor,
+        scaffoldBackgroundColor: backgroundColor,
+        iconTheme: const IconThemeData(color: whiteColor),
+        appBarTheme: const AppBarTheme(backgroundColor: darkGreyColor),
+        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: whiteColor),
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(backgroundColor: darkGreyColor),
+        elevatedButtonTheme: ElevatedButtonThemeData(style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.redAccent))),
+        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        // useMaterial3: true
       ),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({ super.key, required this.title });
+  const MyHomePage({super.key, required this.title});
 
   final String title;
 
@@ -52,9 +52,6 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(title: Text(widget.title), backgroundColor: Theme.of(context).colorScheme.inversePrimary),
       body: Center(
         child: Column(
-          //? TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          //? action in the IDE, or press "p" in the console), to see the
-          //? wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text('You have pushed the button this many times:'),

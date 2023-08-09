@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'dart:async';
 
-// import 'package:flutter/foundation.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -12,20 +11,21 @@ part 'movielistpage_event.dart';
 part 'movielistpage_state.dart';
 
 class MovieListPageBloc extends Bloc<MovieListPageEvent, MovieListPageState> {
-  MovieListPageBloc() : super(const MovieListPageLoadingState());
+  MovieListPageBloc() : super(const MovieListPageLoadingState()) {
+     on<GetMovieListBaseOnCategory>(_onStarted);
+  }
 
-  Stream<MovieListPageState> mapEventToState(MovieListPageEvent event) async* {
-    yield const MovieListPageLoadingState();
+  Future<void> _onStarted(GetMovieListBaseOnCategory event, Emitter<MovieListPageState> emit) async {
+    emit(const MovieListPageLoadingState());
 
-    if (event is GetMovieListBaseOnCategory) {
-      try {
-        final List<Movie> moviesList = await NetworkRepo().getMovieCategoryList(event.categoryUrl);
-        yield MovieListPageLoadedState(moviesList: moviesList);
-      } on IOException {
-        yield const MovieListPageNoInternetState();
-      } catch (e) {
-        yield const MovieListPageErrorState();
-      }
+    try {
+      final List<Movie> movieList = await NetworkRepo().getMovieCategoryList(event.categoryUrl);
+      emit(MovieListPageLoadedState(movieList: movieList));
+    } on IOException {
+      emit(const MovieListPageNoInternetState());
+    } catch (e) {
+      // print(e.toString());
+      emit(const MovieListPageErrorState());
     }
   }
 }

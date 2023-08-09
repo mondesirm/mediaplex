@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
+import 'movies_list_page.dart';
 import 'package:mediaplex/utils/constants.dart';
 import 'package:mediaplex/data/movies/movies_categories.dart';
 import 'package:mediaplex/presentation/widgets/categories_widget.dart';
-import 'package:mediaplex/presentation/pages/movies/movies_list_page.dart';
 
 class MoviesCategoriesPage extends StatefulWidget {
   const MoviesCategoriesPage({ super.key });
@@ -13,32 +13,26 @@ class MoviesCategoriesPage extends StatefulWidget {
 }
 
 class _MoviesCategoriesPageState extends State<MoviesCategoriesPage> {
-  var movieCategoriesList = movieCategories;
+  var categoriesList = moviesCategories;
 
   @override
   void initState() { super.initState(); }
 
-  void onSearchBarValueChangeFunction(String searchText) {
-    final searchedChannels = movieCategories.where((category) {
-      final searchTextToLowerCase = searchText.toLowerCase();
-      final categoryNameToLowerCase = category.categoryName.toLowerCase();
+  void onSearch(String text) {
+    final filtered = moviesCategories.where((category) =>
+      category.categoryName.toLowerCase().contains(text.toLowerCase())
+    ).toList();
 
-      return categoryNameToLowerCase.contains(searchTextToLowerCase);
-    }).toList();
-
-    setState(() { movieCategoriesList = searchedChannels; });
+    setState(() { categoriesList = filtered; });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text('Movies Categories', style: logoTextStyle)
-      ),
+      appBar: AppBar(centerTitle: true, title: const Text('Movies Categories', style: logoTextStyle)),
       body: CategoriesWidget(
-        onSearchBarValueChangeFunction: onSearchBarValueChangeFunction,
-        categoriesList: movieCategoriesList,
+        onSearch: onSearch,
+        categoriesList: categoriesList,
         onTapNavigate: (categoryUrl, categoryName) {
           Navigator.of(context).push(MaterialPageRoute(builder: (context) {
             return MovieListPage(categoryUrl: categoryUrl, categoryName: categoryName);

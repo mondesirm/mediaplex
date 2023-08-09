@@ -13,20 +13,17 @@ class SeriesCategoriesPage extends StatefulWidget {
 }
 
 class _SeriesCategoriesPageState extends State<SeriesCategoriesPage> {
-  var seriesCategoriesList = seriesCategories;
+  var categoriesList = seriesCategories;
 
   @override
   void initState() { super.initState(); }
 
-  void onSearchBarValueChangeFunction(String searchText) {
-    final searchedChannels = seriesCategories.where((category) {
-      final searchTextToLowerCase = searchText.toLowerCase();
-      final categoryNameToLowerCase = category.categoryName.toLowerCase();
-
-      return categoryNameToLowerCase.contains(searchTextToLowerCase);
+  void onSearch(String text) {
+    final filtered = seriesCategories.where((category) {
+      return category.categoryName.toLowerCase().contains(text.toLowerCase());
     }).toList();
 
-    setState(() { seriesCategoriesList = searchedChannels; });
+    setState(() { categoriesList = filtered; });
   }
 
   @override
@@ -34,8 +31,8 @@ class _SeriesCategoriesPageState extends State<SeriesCategoriesPage> {
     return Scaffold(
       appBar: AppBar(centerTitle: true, title: const Text('Series Categories', style: logoTextStyle)),
       body: CategoriesWidget(
-        onSearchBarValueChangeFunction: onSearchBarValueChangeFunction,
-        categoriesList: seriesCategoriesList,
+        onSearch: onSearch,
+        categoriesList: categoriesList,
         onTapNavigate: (categoryUrl, categoryName) {
           Navigator.of(context).push(MaterialPageRoute(builder: (context) {
             return SeriesListPage(categoryUrl: categoryUrl, categoryName: categoryName);

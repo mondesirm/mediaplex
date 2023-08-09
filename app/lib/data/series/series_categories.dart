@@ -1,51 +1,49 @@
-// import 'package:flutter/foundation.dart';
-
 class SeriesCategories {
-  final String categoryName;
   final String categoryUrl;
   final String categoryLogo;
-  const SeriesCategories( { required this.categoryUrl, required this.categoryLogo, required this.categoryName });
+  final String categoryName;
+  const SeriesCategories({ required this.categoryUrl, required this.categoryLogo, required this.categoryName });
 }
 
 const List<SeriesCategories> seriesCategories = [
   SeriesCategories(
-      categoryName: 'Action',
-      categoryUrl: 'actionSeries',
-      categoryLogo: 'https://t3.gstatic.com/images?q=tbn:ANd9GcQzBPeJBL1nrbE44py9eA0PFWzRQjQlW4NwjIBKuOMjVi4ou8UR'),
+    categoryName: 'Action',
+    categoryUrl: 'actionSeries',
+    categoryLogo: 'https://loremflickr.com/g/640/640/series,action'),
   SeriesCategories(
-      categoryName: 'Adventure',
-      categoryUrl: 'adventureSeries',
-      categoryLogo: 'https://t3.gstatic.com/images?q=tbn:ANd9GcQzBPeJBL1nrbE44py9eA0PFWzRQjQlW4NwjIBKuOMjVi4ou8UR'),
+    categoryName: 'Adventure',
+    categoryUrl: 'adventureSeries',
+    categoryLogo: 'https://loremflickr.com/g/640/640/series,adventure'),
   SeriesCategories(
-      categoryName: 'Animated',
-      categoryUrl: 'animatedSeries',
-      categoryLogo: 'https://t3.gstatic.com/images?q=tbn:ANd9GcQzBPeJBL1nrbE44py9eA0PFWzRQjQlW4NwjIBKuOMjVi4ou8UR'),
+    categoryName: 'Animated',
+    categoryUrl: 'animatedSeries',
+    categoryLogo: 'https://loremflickr.com/g/640/640/series,animated'),
   SeriesCategories(
-      categoryName: 'Comedies',
-      categoryUrl: 'comediesSeries',
-      categoryLogo: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80'),
+    categoryName: 'Comedies',
+    categoryUrl: 'comediesSeries',
+    categoryLogo: 'https://loremflickr.com/g/640/640/series,comedies'),
   SeriesCategories(
-      categoryName: 'Dramas',
-      categoryUrl: 'dramasSeries',
-      categoryLogo: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80'),
+    categoryName: 'Dramas',
+    categoryUrl: 'dramasSeries',
+    categoryLogo: 'https://loremflickr.com/g/640/640/series,dramas'),
   SeriesCategories(
-      categoryName: 'Horror',
-      categoryUrl: 'horrorSeries',
-      categoryLogo: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80'),
+    categoryName: 'Horror',
+    categoryUrl: 'horrorSeries',
+    categoryLogo: 'https://loremflickr.com/g/640/640/series,horror'),
   SeriesCategories(
-      categoryName: 'Musical',
-      categoryUrl: 'musicalSeries',
-      categoryLogo: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80'),
+    categoryName: 'Musical',
+    categoryUrl: 'musicalSeries',
+    categoryLogo: 'https://loremflickr.com/g/640/640/series,musical'),
   SeriesCategories(
-      categoryName: 'Other',
-      categoryUrl: 'otherSeries',
-      categoryLogo: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80'),
+    categoryName: 'Other',
+    categoryUrl: 'otherSeries',
+    categoryLogo: 'https://loremflickr.com/g/640/640/series,other'),
   SeriesCategories(
-      categoryName: 'RealLife',
-      categoryUrl: 'reallifeSeries',
-      categoryLogo: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80'),
+    categoryName: 'RealLife',
+    categoryUrl: 'reallifeSeries',
+    categoryLogo: 'https://loremflickr.com/g/640/640/series,reallife'),
   SeriesCategories(
-      categoryName: 'Romantic',
-      categoryUrl: 'romanticSeries',
-      categoryLogo: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80')
+    categoryName: 'Romantic',
+    categoryUrl: 'romanticSeries',
+    categoryLogo: 'https://loremflickr.com/g/640/640/series,romantic')
 ];

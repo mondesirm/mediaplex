@@ -26,19 +26,19 @@ class _BaseScreenState extends State<BaseScreen> {
     return Scaffold(
       body: Container(child: _screenList.elementAt(currentScreen)),
       bottomNavigationBar: BottomNavigationBar(
+        onTap: changeScreen,
+        currentIndex: currentScreen,
+        backgroundColor: darkGreyColor,
+        unselectedItemColor: whiteColor,
+        selectedItemColor: darkBlueColor,
         type: BottomNavigationBarType.fixed,
+        selectedLabelStyle: const TextStyle(color: whiteColor),
         items: const [
           BottomNavigationBarItem(icon: Icon(CupertinoIcons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(CupertinoIcons.tv), label: 'Tv Channel'),
           BottomNavigationBarItem(icon: Icon(CupertinoIcons.film), label: 'Movies'),
           BottomNavigationBarItem(icon: Icon(CupertinoIcons.tickets), label: 'Series')
-        ],
-        backgroundColor: darkGreyColor,
-        currentIndex: currentScreen,
-        onTap: changeScreen,
-        selectedItemColor: darkBlueColor,
-        selectedLabelStyle: const TextStyle(color: whiteColor),
-        unselectedItemColor: whiteColor
+        ]
       )
     );
   }

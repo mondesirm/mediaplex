@@ -1,51 +1,49 @@
-// import 'package:flutter/foundation.dart';
-
 class MoviesCategories {
-  final String categoryName;
   final String categoryUrl;
   final String categoryLogo;
+  final String categoryName;
   const MoviesCategories({ required this.categoryUrl, required this.categoryLogo, required this.categoryName });
 }
 
-const List<MoviesCategories> movieCategories = [
+const List<MoviesCategories> moviesCategories = [
   MoviesCategories(
-      categoryName: 'Action',
-      categoryUrl: 'actionMovies',
-      categoryLogo: 'https://t3.gstatic.com/images?q=tbn:ANd9GcQzBPeJBL1nrbE44py9eA0PFWzRQjQlW4NwjIBKuOMjVi4ou8UR'),
+    categoryName: 'Action',
+    categoryUrl: 'actionMovies',
+    categoryLogo: 'https://loremflickr.com/g/640/640/movies,action/all'),
   MoviesCategories(
-      categoryName: 'Adventure',
-      categoryUrl: 'adventureMovies',
-      categoryLogo: 'https://t3.gstatic.com/images?q=tbn:ANd9GcQzBPeJBL1nrbE44py9eA0PFWzRQjQlW4NwjIBKuOMjVi4ou8UR'),
+    categoryName: 'Adventure',
+    categoryUrl: 'adventureMovies',
+    categoryLogo: 'https://loremflickr.com/g/640/640/movies,adventure/all'),
   MoviesCategories(
-      categoryName: 'Animated',
-      categoryUrl: 'animatedMovies',
-      categoryLogo: 'https://t3.gstatic.com/images?q=tbn:ANd9GcQzBPeJBL1nrbE44py9eA0PFWzRQjQlW4NwjIBKuOMjVi4ou8UR'),
+    categoryName: 'Animated',
+    categoryUrl: 'animatedMovies',
+    categoryLogo: 'https://loremflickr.com/g/640/640/movies,animated/all'),
   MoviesCategories(
-      categoryName: 'Comedies',
-      categoryUrl: 'comediesMovies',
-      categoryLogo: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80'),
+    categoryName: 'Comedies',
+    categoryUrl: 'comediesMovies',
+    categoryLogo: 'https://loremflickr.com/g/640/640/movies,comedies/all'),
   MoviesCategories(
-      categoryName: 'Dramas',
-      categoryUrl: 'dramasMovies',
-      categoryLogo: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80'),
+    categoryName: 'Dramas',
+    categoryUrl: 'dramasMovies',
+    categoryLogo: 'https://loremflickr.com/g/640/640/movies,dramas/all'),
   MoviesCategories(
-      categoryName: 'Horror',
-      categoryUrl: 'horrorMovies',
-      categoryLogo: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80'),
+    categoryName: 'Horror',
+    categoryUrl: 'horrorMovies',
+    categoryLogo: 'https://loremflickr.com/g/640/640/movies,horror/all'),
   MoviesCategories(
-      categoryName: 'Musical',
-      categoryUrl: 'musicalMovies',
-      categoryLogo: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80'),
+    categoryName: 'Musical',
+    categoryUrl: 'musicalMovies',
+    categoryLogo: 'https://loremflickr.com/g/640/640/movies,musical/all'),
   MoviesCategories(
-      categoryName: 'Other',
-      categoryUrl: 'otherMovies',
-      categoryLogo: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80'),
+    categoryName: 'Other',
+    categoryUrl: 'otherMovies',
+    categoryLogo: 'https://loremflickr.com/g/640/640/movies,other/all'),
   MoviesCategories(
-      categoryName: 'RealLife',
-      categoryUrl: 'reallifeMovies',
-      categoryLogo: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80'),
+    categoryName: 'RealLife',
+    categoryUrl: 'reallifeMovies',
+    categoryLogo: 'https://loremflickr.com/g/640/640/movies,reallife/all'),
   MoviesCategories(
-      categoryName: 'Romantic',
-      categoryUrl: 'romanticMovies',
-      categoryLogo: 'https://images.unsplash.com/photo-1509248961158-e54f6934749c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&q=80')
+    categoryName: 'Romantic',
+    categoryUrl: 'romanticMovies',
+    categoryLogo: 'https://loremflickr.com/g/640/640/movies,romantic/all')
 ];

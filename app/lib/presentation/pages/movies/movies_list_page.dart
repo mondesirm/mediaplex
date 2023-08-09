@@ -47,7 +47,7 @@ class _MovieListPageState extends State<MovieListPage> {
             return const Center(child: CircularProgressIndicator());
           } else if (state is MovieListPageLoadedState) {
             return ListScreen(
-              list: state.moviesList,
+              list: state.movieList,
               hintText: hintText,
               navigationFunction: (movie) {
                 return Navigator.push(context, MaterialPageRoute(builder: (context) { return MovieDetailPage(movie: movie as Movie); }));
