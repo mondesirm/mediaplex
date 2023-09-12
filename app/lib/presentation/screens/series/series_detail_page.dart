@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:mediaplex/utils/constants.dart';
 import 'package:mediaplex/data/series/series.dart';
 import 'package:mediaplex/presentation/widgets/widget_information_box.dart';
-import 'package:mediaplex/presentation/pages/series/season_detail_page.dart';
+import 'package:mediaplex/presentation/screens/series/season_detail_page.dart';
 import 'package:mediaplex/presentation/widgets/series_season_display_card.dart';
 
 class SeriesDetailPage extends StatefulWidget {

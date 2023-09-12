@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'package:mediaplex/utils/constants.dart';
-import 'package:mediaplex/presentation/pages/view_media_page.dart';
+import 'package:mediaplex/presentation/screens/view_media_page.dart';
 
 class HomeScreenBanner extends StatelessWidget {
   final Size size;

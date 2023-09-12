@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 
 import 'package:mediaplex/utils/constants.dart';
 import 'package:mediaplex/data/movies/movies.dart';
-import 'package:mediaplex/presentation/pages/view_media_page.dart';
+import 'package:mediaplex/presentation/screens/view_media_page.dart';
 import 'package:mediaplex/presentation/widgets/widget_information_box.dart';
 
 class MovieDetailPage extends StatefulWidget {

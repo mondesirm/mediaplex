@@ -5,7 +5,7 @@ import 'package:mediaplex/utils/constants.dart';
 import 'package:mediaplex/data/series/series.dart';
 import 'package:mediaplex/presentation/widgets/list_screen.dart';
 import 'package:mediaplex/presentation/widgets/error_widget.dart';
-import 'package:mediaplex/presentation/pages/series/series_detail_page.dart';
+import 'package:mediaplex/presentation/screens/series/series_detail_page.dart';
 import 'package:mediaplex/presentation/bloc/series_list_page/serieslistpage_bloc.dart';
 
 class SeriesListPage extends StatefulWidget {

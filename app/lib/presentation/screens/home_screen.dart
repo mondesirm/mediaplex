@@ -9,14 +9,14 @@ import 'package:mediaplex/presentation/widgets/coming_soon_banner.dart';
 import 'package:mediaplex/presentation/widgets/horizontal_items_list.dart';
 import 'package:mediaplex/presentation/bloc/home_page_bloc/homepage_bloc.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({ super.key });
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({ super.key });
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomeScreenState extends State<HomeScreen> {
   static const titleGeneralError = 'An Error Occurred';
   static const titleNetworkError = 'No Internet Connection';
 

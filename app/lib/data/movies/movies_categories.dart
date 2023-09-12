@@ -9,41 +9,41 @@ const List<MoviesCategories> moviesCategories = [
   MoviesCategories(
     categoryName: 'Action',
     categoryUrl: 'actionMovies',
-    categoryLogo: 'https://loremflickr.com/g/640/640/movies,action/all'),
+    categoryLogo: 'images/categories/action.png'),
   MoviesCategories(
     categoryName: 'Adventure',
     categoryUrl: 'adventureMovies',
-    categoryLogo: 'https://loremflickr.com/g/640/640/movies,adventure/all'),
+    categoryLogo: 'images/categories/action.png'),
   MoviesCategories(
     categoryName: 'Animated',
     categoryUrl: 'animatedMovies',
-    categoryLogo: 'https://loremflickr.com/g/640/640/movies,animated/all'),
+    categoryLogo: 'images/categories/animation.png'),
   MoviesCategories(
     categoryName: 'Comedies',
     categoryUrl: 'comediesMovies',
-    categoryLogo: 'https://loremflickr.com/g/640/640/movies,comedies/all'),
+    categoryLogo: 'images/categories/comedy.png'),
   MoviesCategories(
     categoryName: 'Dramas',
     categoryUrl: 'dramasMovies',
-    categoryLogo: 'https://loremflickr.com/g/640/640/movies,dramas/all'),
+    categoryLogo: 'images/categories/drama.png'),
   MoviesCategories(
     categoryName: 'Horror',
     categoryUrl: 'horrorMovies',
-    categoryLogo: 'https://loremflickr.com/g/640/640/movies,horror/all'),
+    categoryLogo: 'images/categories/horror.png'),
   MoviesCategories(
     categoryName: 'Musical',
     categoryUrl: 'musicalMovies',
-    categoryLogo: 'https://loremflickr.com/g/640/640/movies,musical/all'),
+    categoryLogo: 'images/categories/musical.png'),
   MoviesCategories(
     categoryName: 'Other',
     categoryUrl: 'otherMovies',
-    categoryLogo: 'https://loremflickr.com/g/640/640/movies,other/all'),
+    categoryLogo: 'images/categories/musical.png'),
   MoviesCategories(
     categoryName: 'RealLife',
     categoryUrl: 'reallifeMovies',
-    categoryLogo: 'https://loremflickr.com/g/640/640/movies,reallife/all'),
+    categoryLogo: 'images/categories/musical.png'),
   MoviesCategories(
     categoryName: 'Romantic',
     categoryUrl: 'romanticMovies',
-    categoryLogo: 'https://loremflickr.com/g/640/640/movies,romantic/all')
+    categoryLogo: 'images/categories/romance.png')
 ];

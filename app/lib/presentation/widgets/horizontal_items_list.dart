@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:mediaplex/utils/constants.dart';
-import 'package:mediaplex/presentation/pages/view_media_page.dart';
+import 'package:mediaplex/presentation/screens/view_media_page.dart';
 
 class HorizontalItemsList extends StatelessWidget {
   final String listTitle;
@@ -17,7 +17,7 @@ class HorizontalItemsList extends StatelessWidget {
         children: <Widget>[
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [Text(listTitle, style: listTitleStyle), Text('(${list.length})', style: listTitleStyle)],
+            children: [Text(listTitle, style: listTitleStyle), Text('(${list.length})', style: listTitleStyle)]
           ),
           Container(
             height: 170.0,
@@ -35,8 +35,8 @@ class HorizontalItemsList extends StatelessWidget {
                     height: 150.0,
                     margin: const EdgeInsets.symmetric(horizontal: 5.0),
                     decoration: BoxDecoration(
-                      image: DecorationImage(image: NetworkImage(list[index].logo), fit: BoxFit.contain),
-                      borderRadius: const BorderRadius.all(Radius.circular(10.0))
+                      borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+                      image: DecorationImage(image: NetworkImage(list[index].logo), fit: BoxFit.contain)
                     )
                   )
                 );

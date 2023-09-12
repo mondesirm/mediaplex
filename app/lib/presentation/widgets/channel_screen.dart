@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'channel_card.dart';
 import 'package:mediaplex/utils/constants.dart';
 import 'package:mediaplex/data/channels/channel.dart';
-import 'package:mediaplex/presentation/pages/view_media_page.dart';
+import 'package:mediaplex/presentation/screens/view_media_page.dart';
 
 class ChannelScreen extends StatefulWidget {
   const ChannelScreen({ super.key, required this.size, required this.channelList });

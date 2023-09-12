@@ -29,15 +29,13 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
           shrinkWrap: true,
           children: [
             Lottie.asset(
-              'assets/images/splash_screen_animation_lottie_json.json',
+              'lottie/splash.json',
               width: width,
               height: width,
               fit: BoxFit.fill,
               controller: _animationController, onLoaded: (composition) {
               _animationController..duration = composition.duration..forward().whenComplete(() => Navigator.of(context).pushAndRemoveUntil(
-                MaterialPageRoute(builder: (context) {
-                  return const BaseScreen();
-                }), (route) => false
+                MaterialPageRoute(builder: (context) => const BaseScreen()), (route) => false
               ));
             }),
             sized30,
