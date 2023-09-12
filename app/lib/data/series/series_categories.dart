@@ -9,41 +9,41 @@ const List<SeriesCategories> seriesCategories = [
   SeriesCategories(
     categoryName: 'Action',
     categoryUrl: 'actionSeries',
-    categoryLogo: 'https://loremflickr.com/g/640/640/series,action'),
+    categoryLogo: 'images/categories/action.png'),
   SeriesCategories(
     categoryName: 'Adventure',
     categoryUrl: 'adventureSeries',
-    categoryLogo: 'https://loremflickr.com/g/640/640/series,adventure'),
+    categoryLogo: 'images/categories/action.png'),
   SeriesCategories(
     categoryName: 'Animated',
     categoryUrl: 'animatedSeries',
-    categoryLogo: 'https://loremflickr.com/g/640/640/series,animated'),
+    categoryLogo: 'images/categories/animation.png'),
   SeriesCategories(
     categoryName: 'Comedies',
     categoryUrl: 'comediesSeries',
-    categoryLogo: 'https://loremflickr.com/g/640/640/series,comedies'),
+    categoryLogo: 'images/categories/comedy.png'),
   SeriesCategories(
     categoryName: 'Dramas',
     categoryUrl: 'dramasSeries',
-    categoryLogo: 'https://loremflickr.com/g/640/640/series,dramas'),
+    categoryLogo: 'images/categories/drama.png'),
   SeriesCategories(
     categoryName: 'Horror',
     categoryUrl: 'horrorSeries',
-    categoryLogo: 'https://loremflickr.com/g/640/640/series,horror'),
+    categoryLogo: 'images/categories/horror.png'),
   SeriesCategories(
     categoryName: 'Musical',
     categoryUrl: 'musicalSeries',
-    categoryLogo: 'https://loremflickr.com/g/640/640/series,musical'),
+    categoryLogo: 'images/categories/musical.png'),
   SeriesCategories(
     categoryName: 'Other',
     categoryUrl: 'otherSeries',
-    categoryLogo: 'https://loremflickr.com/g/640/640/series,other'),
+    categoryLogo: 'images/categories/musical.png'),
   SeriesCategories(
     categoryName: 'RealLife',
     categoryUrl: 'reallifeSeries',
-    categoryLogo: 'https://loremflickr.com/g/640/640/series,reallife'),
+    categoryLogo: 'images/categories/musical.png'),
   SeriesCategories(
     categoryName: 'Romantic',
     categoryUrl: 'romanticSeries',
-    categoryLogo: 'https://loremflickr.com/g/640/640/series,romantic')
+    categoryLogo: 'images/categories/romance.png')
 ];

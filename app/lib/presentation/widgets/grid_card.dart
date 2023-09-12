@@ -25,7 +25,7 @@ class GridCard extends StatelessWidget {
           child: Container(
             decoration: BoxDecoration(
               borderRadius: const BorderRadius.only(topLeft: Radius.circular(10.0), topRight: Radius.circular(10.0)),
-              image: DecorationImage(image: NetworkImage(logoUrl), fit: BoxFit.cover)
+              image: DecorationImage(image: AssetImage(logoUrl), fit: BoxFit.cover)
             )
           )
         ),
