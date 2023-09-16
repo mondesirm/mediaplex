@@ -1,0 +1,7 @@
+[submodule "api"]
+    path = api
+    url = git@github.com:mondesirm/mediaplex-api.git
+
+[submodule "app"]
+    path = app
+    url = git@github.com:mondesirm/mediaplex-app.git
