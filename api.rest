@@ -1,0 +1,85 @@
+@apiUrl = http://127.0.0.1:8000
+@username = John DOE
+@email = root1@root.com
+@password = Password123*
+@url = {{apiUrl}}/static/fr.m3u
+
+# Base URL: returns nothing
+GET {{apiUrl}}
+###
+
+# Register
+POST  {{apiUrl}}/user
+Content-Type: application/json
+
+{
+    "email": "{{email}}",
+    "username": "{{username}}",
+    "password": "{{password}}"
+}
+###
+
+# Login
+# @name login
+POST  {{apiUrl}}/login
+Content-Type: application/json
+
+{
+    "email": "{{email}}",
+    "password": "{{password}}"
+}
+###
+
+@token = {{login.response.body.access_token}}
+
+# Get profile
+GET  {{apiUrl}}/profile
+Authorization: Bearer {{token}}
+###
+
+# Update profile
+PATCH  {{apiUrl}}/profile
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "email": "{{email}}",
+    "username": "{{username}}",
+    "old_password": "{{password}}"
+}
+###
+
+# Get all users (except current user)
+GET  {{apiUrl}}/user
+Authorization: Bearer {{token}}
+###
+
+# Get one user
+GET  {{apiUrl}}/user/1
+Authorization: Bearer {{token}}
+###
+
+# Get all favs
+GET  {{apiUrl}}/fav
+Content-Type: application/json
+Authorization: Bearer {{token}}
+###
+
+# Add a new fav
+# @name fav
+POST  {{apiUrl}}/fav
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "name": "Fav",
+    "url": "{{url}}",
+    "category": "Other"
+}
+###
+
+@favId = {{fav.response.body.id}}
+
+# Delete a fav
+DELETE  {{apiUrl}}/fav/{{favId}}
+Authorization: Bearer {{token}}

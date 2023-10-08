@@ -19,6 +19,23 @@
             "request": "launch",
             "type": "dart",
             "args": ["--web-browser-flag", "--disable-web-security"]
+        },
+        {
+            "name": "Flutter (Chrome)",
+            "program": "lib/main.dart",
+            "cwd": "${workspaceFolder}/app",
+            "deviceId": "chrome",
+            "request": "launch",
+            "type": "dart",
+            "args": ["--web-browser-flag", "--disable-web-security"]
+        },
+        {
+            "name": "Flutter (Windows)",
+            "program": "lib/main.dart",
+            "cwd": "${workspaceFolder}/app",
+            "deviceId": "windows",
+            "request": "launch",
+            "type": "dart"
         }
     ]
 }
