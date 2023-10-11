@@ -2,7 +2,7 @@
 @username = John DOE
 @email = root1@root.com
 @password = Password123*
-@url = {{apiUrl}}/static/fr.m3u
+@url = {{apiUrl}}/assets/fr.m3u
 
 # Base URL: returns nothing
 GET {{apiUrl}}

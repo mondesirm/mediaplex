@@ -1,7 +1,8 @@
 ![mediaplex](assets/logo.svg)
 <h2 align="center">A Cross-Platform IPTV Player and Home Media Server</h2>
 
-![license](https://img.shields.io/github/license/mondesirm/mediaplex)
+[![license](https://img.shields.io/github/license/mondesirm/mediaplex)](https://github.com/mondesirm/mediaplex/blob/main/LICENSE)
+<!-- [![deploy](https://github.com/mondesirm/mediaplex/workflows/deploy/badge.svg)](https://github.com/mondesirm/mediaplex/actions?query=workflow:deploy) -->
 
 A cross-platform **IPTV player** and **Home Media Server** developed for Web/Android/IOS/Windows.
 
